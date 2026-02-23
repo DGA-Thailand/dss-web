@@ -1,0 +1,40 @@
+{
+  "ControlID": "AI-23",
+  "OriginalTopic": "",
+  "Category": "3.3.1.1 การเพิ่มประสิทธิภาพผ่านเครื่องมือค้นหา (Search Engine Optimization: SEO)",
+  "Metadata": {
+    "ApplicationType": "Web",
+    "ServiceType": "Portal, Informational",
+    "Compliance": "Optional",
+    "ImpactLevels": {
+      "Low": "-",
+      "Medium": "-",
+      "High": "-"
+    }
+  },
+  "OriginalRecommendations": "จัดทำไฟล์ Sitemap.xml และ Robots.txt เพื่อนำทางให้ Search Engine เข้าถึงเนื้อหาที่ต้องการนำเสนอได้อย่างครบถ้วน",
+  "AI_Processed": {
+    "Topic": "การช่วยให้ Search Engine เข้าใจโครงสร้างเว็บไซต์",
+    "Recommendations": [
+      "ไฟล์ Sitemap.xml และ Robots.txt เป็นเครื่องมือสำคัญที่ช่วยให้ Search Engine (เช่น Google, Bing) เข้าใจโครงสร้างและเนื้อหาของเว็บไซต์ได้ดียิ่งขึ้น โดย Sitemap.xml ทำหน้าที่เป็น \"แผนที่เว็บไซต์\" ที่รวบรวม URL ของหน้าเพจทั้งหมดที่ต้องการให้ถูกจัดทำดัชนี (Index) ส่วน Robots.txt เป็นไฟล์ที่ใช้กำหนด \"กฎ\" หรือขอบเขตให้ Crawler ของ Search Engine ทราบว่าส่วนใดของเว็บไซต์ที่สามารถเข้าถึงได้ หรือส่วนใดที่ไม่ควรเข้ามาเก็บข้อมูล",
+      "ผู้พัฒนาควรจัดทำไฟล์ Sitemap.xml ให้เป็นปัจจุบันอยู่เสมอ เพื่อให้มั่นใจว่าหน้าใหม่ๆ หรือหน้าที่อัปเดตจะถูกค้นพบโดย Search Engine ได้รวดเร็ว และควรสร้างไฟล์ Robots.txt เพื่อป้องกันการเข้าถึงส่วนที่ไม่จำเป็น เช่น หน้าสำหรับผู้ดูแลระบบ, หน้าผลการค้นหาภายในเว็บ, หรือไฟล์ชั่วคราว นอกจากนี้ ควรระบุตำแหน่งของ Sitemap.xml ไว้ในไฟล์ Robots.txt เพื่อให้ Crawler ค้นพบแผนที่เว็บไซต์ได้ง่ายขึ้น"
+    ],
+    "Checklist": [
+      "มีไฟล์ Robots.txt อยู่ที่ Root Domain (เช่น domain.com/robots.txt) และมีไวยากรณ์ (Syntax) ที่ถูกต้อง",
+      "มีไฟล์ Sitemap.xml ที่สามารถเข้าถึงได้ และมีรูปแบบ (Format) ตามมาตรฐาน XML",
+      "ไฟล์ Robots.txt มีการระบุตำแหน่งของไฟล์ Sitemap.xml",
+      "ไฟล์ Robots.txt ไม่ได้บล็อก (Disallow) การเข้าถึงเนื้อหาสำคัญที่ควรจะปรากฏในผลการค้นหา"
+    ],
+    "Evidence": [
+      "ลิงก์ URL ที่สามารถเข้าถึงไฟล์ `Robots.txt` และ `Sitemap.xml` ได้โดยตรง",
+      "ภาพหน้าจอของเนื้อหาในไฟล์ `Robots.txt` ที่แสดงการอนุญาต (Allow), ไม่อนุญาต (Disallow) และการระบุตำแหน่งของ Sitemap"
+    ],
+    "SuggestedCorrections": [
+      "เนื่องจากการทำให้ประชาชนค้นพบข้อมูลและบริการดิจิทัลภาครัฐได้ง่ายเป็นสิ่งสำคัญ จึงควรปรับระดับการบังคับใช้ (Compliance) ของ Control นี้",
+      "ข้อเสนอแนะ: กำหนดเป็น Mandatory สำหรับบริการที่มี Impact Level 'High', และ Recommended (ควรมี) สำหรับบริการที่มี Impact Level 'Medium' เพื่อเพิ่มประสิทธิภาพในการเข้าถึงข้อมูลของประชาชน"
+    ],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}

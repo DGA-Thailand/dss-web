@@ -1,0 +1,39 @@
+{
+  "ControlID": "AI-25",
+  "OriginalTopic": "",
+  "Category": "3.3.1.1 การเพิ่มประสิทธิภาพผ่านเครื่องมือค้นหา (Search Engine Optimization: SEO)",
+  "Metadata": {
+    "ApplicationType": "Web",
+    "ServiceType": "Portal, Informational",
+    "Compliance": "Optional",
+    "ImpactLevels": {
+      "Low": "-",
+      "Medium": "-",
+      "High": "-"
+    }
+  },
+  "OriginalRecommendations": "พิจารณาใช้ Schema.org เพื่อระบุประเภทของข้อมูลเฉพาะเจาะจง เช่น \"GovernmentService\"",
+  "AI_Processed": {
+    "Topic": "การระบุประเภทข้อมูลด้วย Schema.org",
+    "Recommendations": [
+      "Schema.org คือชุดคำศัพท์ (Vocabulary) ที่เป็นมาตรฐานสากลสำหรับสร้างข้อมูลที่มีโครงสร้าง (Structured Data) บนหน้าเว็บ เพื่อช่วยให้โปรแกรมค้นหา (Search Engines) เช่น Google, Bing เข้าใจเนื้อหาและบริบทของข้อมูลได้ดียิ่งขึ้น เช่น การระบุว่าส่วนนี้คือข้อมูลเกี่ยวกับบริการภาครัฐ, ที่อยู่, หรือคำถามที่พบบ่อย",
+      "การใช้ Schema.org จะช่วยเพิ่มประสิทธิภาพในการค้นหา ทำให้บริการของหน่วยงานปรากฏในผลการค้นหาในรูปแบบที่น่าสนใจและสมบูรณ์ยิ่งขึ้น (Rich Results) ซึ่งช่วยให้ประชาชนค้นพบและเข้าถึงบริการได้ง่ายขึ้น ขอแนะนำให้ใช้ Schema.org โดยเฉพาะประเภท `GovernmentService` สำหรับหน้าเว็บที่ให้ข้อมูลเกี่ยวกับบริการของรัฐโดยตรง และใช้ประเภทอื่นๆ ที่เกี่ยวข้อง เช่น `FAQPage` สำหรับหน้าคำถามที่พบบ่อย หรือ `Article` สำหรับบทความให้ความรู้ โดยแนะนำให้ติดตั้งในรูปแบบ JSON-LD เนื่องจากง่ายต่อการจัดการและไม่กระทบกับโค้ด HTML หลัก"
+    ],
+    "Checklist": [
+      "มีการระบุประเภทข้อมูลที่สำคัญบนหน้าเว็บโดยใช้ Schema.org (เช่น `GovernmentService`, `FAQPage`, `Article`)",
+      "Structured Data ที่ใช้งานเป็นไปตามรูปแบบที่ถูกต้อง (เช่น JSON-LD, Microdata)",
+      "สามารถตรวจสอบความถูกต้องของ Structured Data ผ่านเครื่องมือทดสอบ (เช่น Google's Rich Results Test) และไม่พบข้อผิดพลาดร้ายแรง (Critical Error)"
+    ],
+    "Evidence": [
+      "สำเนาโค้ด (Code Snippet) ของ Structured Data ที่ติดตั้งในหน้าเว็บ",
+      "ภาพหน้าจอหรือรายงานผลการตรวจสอบจากเครื่องมือทดสอบ Structured Data (เช่น Google's Rich Results Test, Schema Markup Validator) ที่แสดงว่าข้อมูลถูกต้อง"
+    ],
+    "SuggestedCorrections": [
+      "Control ID 'AI-25' อาจไม่สอดคล้องกับเนื้อหา ซึ่งเกี่ยวกับการปรับปรุงการค้นหา (SEO) และความสามารถในการค้นพบข้อมูล (Discoverability) มากกว่าเรื่องการยืนยันตัวตนหรือการตรวจสอบ (Audit) ควรพิจารณาเปลี่ยนหมวดหมู่เป็นด้านเนื้อหาเว็บ (Web Content) หรือการเพิ่มประสิทธิภาพการค้นหา (SEO)",
+      "Control นี้ช่วยให้ประชาชนค้นหาบริการเจอได้ง่ายขึ้น ควรระบุสถานะเป็น 'Optional' สำหรับทุก Impact Level เนื่องจากเป็นแนวปฏิบัติที่ดี (Best Practice) ที่ช่วยยกระดับประสบการณ์ผู้ใช้งาน โดยเฉพาะสำหรับบริการประเภท Portal และ Informational ที่มีผลกระทบสูง (High Impact) ซึ่งการทำให้ประชาชนค้นพบข้อมูลได้ง่ายเป็นสิ่งสำคัญอย่างยิ่ง"
+    ],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}
