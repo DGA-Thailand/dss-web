@@ -1,7 +1,6 @@
 {
   "name": "dss-web",
   "private": true,
-  "homepage": "https://DGA-Thailand.github.io/dss-web/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
