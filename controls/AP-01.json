@@ -1,0 +1,36 @@
+{
+  "ControlID": "AP-01",
+  "OriginalTopic": "",
+  "Category": "4.2.1.1 ความเชื่อถือได้และคุณภาพการให้บริการ (SLA, Availability, Response Time, MTTR)",
+  "Metadata": {
+    "ApplicationType": "ALL",
+    "ServiceType": "Portal, Fully",
+    "Compliance": "ตาม Critical Impact ",
+    "ImpactLevels": {
+      "Low": "Optional",
+      "Medium": "Mandatory",
+      "High": "Mandatory"
+    }
+  },
+  "OriginalRecommendations": "กำหนด SLA ที่ชัดเจน เช่น ระดับความพร้อมใช้งาน (Availability) และเวลาตอบสนองของระบบ (Response Time)",
+  "AI_Processed": {
+    "Topic": "การกำหนดข้อตกลงระดับการให้บริการ (Service Level Agreement - SLA)",
+    "Recommendations": [
+      "ควรกำหนดข้อตกลงระดับการให้บริการ (Service Level Agreement - SLA) ที่ชัดเจนและวัดผลได้ เพื่อสร้างความเข้าใจที่ตรงกันระหว่างผู้ให้บริการและผู้ใช้บริการเกี่ยวกับประสิทธิภาพและความคาดหวังที่มีต่อระบบดิจิทัล",
+      "SLA ที่ดีควรระบุตัวชี้วัดที่สำคัญ (Key Metrics) เช่น ระดับความพร้อมใช้งานของระบบ (Availability หรือ Uptime), เวลาการตอบสนอง (Response Time), และระยะเวลาที่ใช้ในการกู้คืนระบบ (Mean Time to Recovery - MTTR) นอกจากนี้ ควรกำหนดแนวทางการดำเนินการและบทลงโทษในกรณีที่ไม่สามารถรักษาระดับการให้บริการตามที่ตกลงไว้ได้"
+    ],
+    "Checklist": [
+      "มีการกำหนดตัวชี้วัดด้านความพร้อมใช้งาน (Availability/Uptime) และเป้าหมายที่ชัดเจนเป็นลายลักษณ์อักษร (เช่น 99.9%)",
+      "มีการกำหนดตัวชี้วัดด้านเวลาการตอบสนอง (Response Time) และเป้าหมายที่ชัดเจนเป็นลายลักษณ์อักษร (เช่น Response Time เฉลี่ยไม่เกิน 2 วินาที)",
+      "มีการระบุขั้นตอนการดำเนินการหรือบทปรับในกรณีที่ไม่สามารถปฏิบัติตามข้อตกลงได้"
+    ],
+    "Evidence": [
+      "เอกสารข้อตกลงระดับการให้บริการ (SLA Document) ที่ระบุตัวชี้วัดและเป้าหมายไว้อย่างชัดเจน",
+      "ส่วนของข้อตกลงระดับการให้บริการที่ระบุอยู่ในสัญญาการให้บริการ (Service Contract)"
+    ],
+    "SuggestedCorrections": [],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}

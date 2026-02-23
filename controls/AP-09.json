@@ -1,0 +1,40 @@
+{
+  "ControlID": "AP-09",
+  "OriginalTopic": "",
+  "Category": "4.2.2.1 การจัดระดับบริการ (Service Classes)\n",
+  "Metadata": {
+    "ApplicationType": "ALL",
+    "ServiceType": "Portal, Fully",
+    "Compliance": "ตาม Critical Impact ",
+    "ImpactLevels": {
+      "Low": "Optional",
+      "Medium": "Optional",
+      "High": "Mandatory"
+    }
+  },
+  "OriginalRecommendations": "ต้องมีระบบสำรอง (Failover / Redundancy)",
+  "AI_Processed": {
+    "Topic": "การออกแบบระบบให้มีความพร้อมใช้งานสูง (High Availability)",
+    "Recommendations": [
+      "เพื่อให้ระบบดิจิทัลสามารถให้บริการได้อย่างต่อเนื่องและลดผลกระทบจากเหตุการณ์ไม่คาดฝัน การออกแบบสถาปัตยกรรมให้มีความพร้อมใช้งานสูง (High Availability) จึงเป็นสิ่งจำเป็น โดยเฉพาะสำหรับบริการที่มีผลกระทบสูง (High Impact) ซึ่งจะช่วยลดระยะเวลาที่ระบบไม่สามารถใช้งานได้ (Downtime) และรักษาความเชื่อมั่นของผู้ใช้บริการ",
+      "แนวทางปฏิบัติทั่วไปคือการจัดเตรียมระบบสำรอง (Redundancy) ในรูปแบบต่างๆ เช่น Active-Active ที่ระบบทุกตัวทำงานพร้อมกันและช่วยกันประมวลผล หรือ Active-Standby ที่มีระบบสำรองเตรียมพร้อมรอรับช่วงต่อทันทีเมื่อระบบหลักขัดข้อง โดยต้องมีกลไกสลับการทำงานอัตโนมัติ (Automatic Failover) เพื่อให้การเปลี่ยนผ่านเป็นไปอย่างรวดเร็วและราบรื่นที่สุด"
+    ],
+    "Checklist": [
+      "มีการออกแบบสถาปัตยกรรมที่รองรับความพร้อมใช้งานสูง (High Availability) เช่น Active-Active หรือ Active-Standby",
+      "มีกลไกสลับการทำงานไปยังระบบสำรองโดยอัตโนมัติ (Automatic Failover) เมื่อระบบหลักขัดข้อง",
+      "มีการวางแผนและทดสอบการสลับระบบ (Failover/DR Drill) อย่างสม่ำเสมอ เพื่อให้มั่นใจว่ากระบวนการทำงานได้จริง"
+    ],
+    "Evidence": [
+      "เอกสารแผนความต่อเนื่องทางธุรกิจ (Business Continuity Plan) และแผนการกู้คืนระบบ (Disaster Recovery Plan)",
+      "แผนผังโครงสร้างสถาปัตยกรรม (Infrastructure/Architecture Diagram) ที่แสดงการจัดวางเซิร์ฟเวอร์หลัก, ระบบสำรอง, Load Balancer และส่วนประกอบที่เกี่ยวข้อง",
+      "รายงานผลการทดสอบการสลับระบบ (Failover Test Report / DR Drill Report)"
+    ],
+    "SuggestedCorrections": [
+      "สำหรับบริการที่มีผลกระทบปานกลาง (Mid Impact) แต่มีความสำคัญต่อการดำเนินงาน ควรพิจารณาปรับระดับการควบคุมนี้เป็น 'แนะนำ (Recommended)' หรือ 'บังคับ (Mandatory)' ตามความเหมาะสมของแต่ละบริการ",
+      "ควรระบุให้ชัดเจนยิ่งขึ้นว่าการสำรองระบบที่ต้องการนั้นอยู่ในระดับ High Availability (HA) ภายในศูนย์ข้อมูล/Region เดียวกัน หรือเป็นระดับ Disaster Recovery (DR) ซึ่งต้องมีศูนย์ข้อมูลสำรองทางภูมิศาสตร์ (Geo-redundancy) เนื่องจากมีต้นทุนและความซับซ้อนต่างกันมาก"
+    ],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}
