@@ -1,0 +1,41 @@
+{
+  "ControlID": "TC-06",
+  "OriginalTopic": "",
+  "Category": "4.3.1 การเชื่อมโยงข้อมูล (API Integration)",
+  "Metadata": {
+    "ApplicationType": "ALL",
+    "ServiceType": "Partial, Fully",
+    "Compliance": "Mandatory",
+    "ImpactLevels": {
+      "Low": "-",
+      "Medium": "-",
+      "High": "-"
+    }
+  },
+  "OriginalRecommendations": "จัดให้มีมาตรการป้องกันการโจมตีต่อ API เช่น Rate Limiting, Throttling ",
+  "AI_Processed": {
+    "Topic": "การจำกัดปริมาณการเรียกใช้งาน API (API Rate Limiting และ Throttling)",
+    "Recommendations": [
+      "API เป็นช่องทางสำคัญที่อาจถูกโจมตีในรูปแบบ Denial of Service (DoS) หรือการใช้ทรัพยากรระบบจนหมด (Resource Exhaustion) จากการส่งคำร้องขอ (Request) เข้ามาในปริมาณมหาศาล ดังนั้น จึงควรมีมาตรการควบคุมปริมาณการเรียกใช้งาน API เพื่อรักษาเสถียรภาพและความพร้อมใช้งานของระบบ",
+      "นำเทคนิค Rate Limiting (การจำกัดจำนวน Request ในกรอบเวลาที่กำหนด เช่น 100 ครั้งต่อนาที) และ Throttling (การควบคุมความเร็วในการประมวลผล Request) มาปรับใช้ โดยสามารถตั้งค่าผ่านเครื่องมือต่างๆ เช่น API Gateway, Reverse Proxy, หรือ Web Application Firewall (WAF) เพื่อบังคับใช้นโยบายเหล่านี้กับ API ทุกเส้นทาง (Endpoint) ที่ให้บริการแก่ผู้ใช้ภายนอก"
+    ],
+    "Checklist": [
+      "มีการกำหนดนโยบายและค่า Rate Limiting/Throttling ที่เหมาะสมกับลักษณะการใช้งานของแต่ละ API หรือไม่",
+      "มีการใช้เครื่องมือ เช่น API Gateway หรือ Web Application Firewall (WAF) เพื่อบังคับใช้นโยบาย Rate Limiting/Throttling หรือไม่",
+      "มีการทดสอบว่าเมื่อมีการเรียกใช้งาน API เกินกว่าเกณฑ์ที่กำหนด ระบบจะปฏิเสธการเชื่อมต่อ (เช่น ตอบกลับด้วย HTTP Status Code 429 Too Many Requests) ตามที่คาดหวังหรือไม่",
+      "มีการเฝ้าระวัง (Monitoring) และแจ้งเตือน (Alert) เมื่อตรวจพบการเรียกใช้งาน API ที่เข้าข่ายการโจมตีหรือไม่"
+    ],
+    "Evidence": [
+      "เอกสารออกแบบสถาปัตยกรรมหรือนโยบายด้านความปลอดภัยที่ระบุถึงมาตรการ Rate Limiting และ Throttling สำหรับ API",
+      "ภาพหน้าจอการตั้งค่า (Configuration Screenshot) จาก API Gateway, Web Application Firewall (WAF), หรือเครื่องมืออื่น ๆ ที่แสดงการกำหนดค่า Rate Limiting และ Throttling",
+      "ผลการทดสอบที่แสดงว่าระบบสามารถป้องกันการเรียกใช้งาน API ที่เกินกำหนดได้จริง"
+    ],
+    "SuggestedCorrections": [
+      "ข้อมูล Impact Level (Low/Mid/High) ถูกเว้นว่างไว้ทั้งหมด แต่สถานะ Compliance เป็น Mandatory ซึ่งขัดแย้งกัน ควรระบุ Impact Level ให้ชัดเจน",
+      "แนะนำให้กำหนดเป็น 'Mandatory' สำหรับบริการที่มี Impact Level ตั้งแต่ 'Medium' ถึง 'High' เป็นอย่างน้อย เนื่องจากเป็นมาตรการพื้นฐานในการรักษาเสถียรภาพของบริการ (Availability) และป้องกันการโจมตีประเภท Denial of Service"
+    ],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}

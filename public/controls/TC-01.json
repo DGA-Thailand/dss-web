@@ -1,0 +1,39 @@
+{
+  "ControlID": "TC-01",
+  "OriginalTopic": "",
+  "Category": "4.3.1 การเชื่อมโยงข้อมูล (API Integration)",
+  "Metadata": {
+    "ApplicationType": "ALL",
+    "ServiceType": "Partial, Fully",
+    "Compliance": "Mandatory",
+    "ImpactLevels": {
+      "Low": "-",
+      "Medium": "-",
+      "High": "-"
+    }
+  },
+  "OriginalRecommendations": "ใช้มาตรฐาน API กลางของภาครัฐ โดยออกแบบข้อมูลตามโครงสร้างมาตรฐานของประเทศ เช่น มาตรฐานการเชื่อมโยงแลกเปลี่ยนข้อมูล (TGIX)",
+  "AI_Processed": {
+    "Topic": "การออกแบบและเชื่อมต่อ API ตามมาตรฐานภาครัฐ",
+    "Recommendations": [
+      "เพื่อให้การเชื่อมโยงและแลกเปลี่ยนข้อมูลระหว่างหน่วยงานภาครัฐเป็นไปอย่างราบรื่นและมีประสิทธิภาพ ควรออกแบบ Application Programming Interface (API) โดยยึดตามมาตรฐานกลางที่ภาครัฐกำหนด ซึ่งจะช่วยลดความซับซ้อนในการพัฒนาและบำรุงรักษาระบบ และส่งเสริมการทำงานร่วมกัน (Interoperability) ระหว่างระบบดิจิทัลของหน่วยงานต่างๆ",
+      "แนะนำให้ใช้สถาปัตยกรรมแบบ RESTful API และใช้รูปแบบการส่งข้อมูลแบบ JSON (JavaScript Object Notation) ซึ่งเป็นที่นิยมและเข้าใจง่าย นอกจากนี้ โครงสร้างข้อมูลที่ใช้ในการแลกเปลี่ยนควรออกแบบให้สอดคล้องกับมาตรฐานการเชื่อมโยงแลกเปลี่ยนข้อมูลภาครัฐ (Thailand Government Information Exchange: TGIX) เพื่อให้ข้อมูลมีโครงสร้างที่เป็นมาตรฐานเดียวกัน"
+    ],
+    "Checklist": [
+      "API ของระบบถูกออกแบบตามสถาปัตยกรรม RESTful หรือมาตรฐานสากลที่เป็นที่ยอมรับหรือไม่?",
+      "รูปแบบข้อมูลที่ใช้ในการรับ-ส่งผ่าน API เป็น JSON หรือไม่?",
+      "โครงสร้างข้อมูล (Data Schema) สอดคล้องกับมาตรฐาน TGIX หรือมาตรฐานข้อมูลอื่นที่เกี่ยวข้องหรือไม่?",
+      "มีการจัดทำเอกสารคุณลักษณะทางเทคนิคของ API (API Specification) ที่ชัดเจนและเป็นปัจจุบันหรือไม่?"
+    ],
+    "Evidence": [
+      "เอกสารคุณลักษณะทางเทคนิคของ API (API Specification) เช่น ไฟล์ OpenAPI (Swagger) ที่อธิบาย Endpoint, Request/Response format และวิธีการยืนยันตัวตน",
+      "ตัวอย่างข้อมูล (Sample Payload) ในรูปแบบ JSON ที่แสดงโครงสร้างข้อมูลตามมาตรฐาน TGIX"
+    ],
+    "SuggestedCorrections": [
+      "เนื่องจาก Control นี้เป็นพื้นฐานสำคัญของการทำงานร่วมกัน (Interoperability) ของบริการภาครัฐ จึงควรปรับสถานะการบังคับใช้ (Compliance) เป็น Mandatory สำหรับบริการทุกระดับ (Low, Medium, และ High Impact)"
+    ],
+    "IsUnclear": false,
+    "UnclearReason": ""
+  },
+  "ProcessingError": false
+}
