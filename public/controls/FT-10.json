@@ -1,7 +1,7 @@
 {
   "ControlID": "FT-10",
   "OriginalTopic": "",
-  "Category": "4.1 ข้อกำหนดด้านการยืนยันตัวตนและความมั่นคงปลอดภัย (Identity, Authentication & Security by Design)",
+  "Category": "3.3.2.5 การพิสูจน์และยืนยันตัวตน (Authentication & SSO)",
   "Metadata": {
     "ApplicationType": "ALL",
     "ServiceType": "Portal, Partial, Fully",
