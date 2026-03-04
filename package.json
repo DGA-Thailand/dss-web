@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/generate_index.js",
     "dev": "vite",
+    "prebuild": "node scripts/generate_index.js",
     "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
