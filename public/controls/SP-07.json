@@ -5,7 +5,7 @@
   "Metadata": {
     "ApplicationType": "ALL",
     "ServiceType": "Portal, Partial, Fully",
-    "Compliance": "ตาม Critical Impact ",
+    "Compliance": "ตาม Critical Impact ", 
     "ImpactLevels": {
       "Low": "-",
       "Medium": "-",
