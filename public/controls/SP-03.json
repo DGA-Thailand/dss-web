@@ -10,7 +10,7 @@
       "Low": "Mandatory",
       "Medium": "-",
       "High": "-"
-    }
+    } 
   },
   "OriginalRecommendations": "มาตรการความปลอดภัยพื้นฐาน เช่น การเปลี่ยนรหัสผ่าน, และการอัปเดต Security Patch ตามรอบ",
   "AI_Processed": {
