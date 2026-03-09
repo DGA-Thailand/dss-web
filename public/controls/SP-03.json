@@ -1,7 +1,7 @@
 {
   "ControlID": "SP-03",
   "OriginalTopic": "",
-  "Category": "4.2.2.1 การจัดระดับบริการ (Service Classes)\nClass 3: Low Impact / Informational Services",
+  "Category": "4.1 ข้อกำหนดด้านการยืนยันตัวตนและความมั่นคงปลอดภัย (Identity, Authentication & Security by Design)",
   "Metadata": {
     "ApplicationType": "ALL",
     "ServiceType": "ALL",
